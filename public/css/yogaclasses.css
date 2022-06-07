@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Quicksand;
+  src: url(/fonts/Quicksand.ttf);
+}
+
+@font-face {
+  font-family: Quicksand-L;
+  src: url(/fonts/Quicksand-Light.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.heroImageYg {
+  width: 100vw;
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animate {
+  opacity: 0;
+  overflow: hidden;
+}
+
+.animate.active {
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.hidden {
+  display: none;
+}
